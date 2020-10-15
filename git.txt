@@ -1,0 +1,14 @@
+Initialization
+
+Create git repo on github : mit_600.2x
+
+Create local git repo
+
+cd /home/explore/git/guillaume/mit_600.2x
+echo "# MITx 6.00.2xIntroduction to Computational Thinking and Data Science" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin git@github.com:castorfou/mit_600.2x.git
+git push -u origin master
