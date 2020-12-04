@@ -104,6 +104,7 @@ def brute_force_cow_transport(cows,limit=10):
             if total_sum > limit:
                 nombre_overwith += 1
         if (nombre_overwith ==0): trip.append(voyage_complet)
+    trip.sort(key=len)
     return trip[0]
         
 # Problem 3
@@ -147,3 +148,4 @@ print(greedy_cow_transport(cows, limit))
 print(brute_force_cow_transport(cows, limit))
 compare_cow_transport_algorithms()
 
+print(brute_force_cow_transport({'Milkshake': 40, 'Horns': 25, 'Boo': 20, 'Lotus': 40, 'MooMoo': 50, 'Miss Bella': 25}, 100))
